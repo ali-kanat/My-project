@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الكتب - المكتبة الرقمية</title>
+    <link rel="stylesheet" href="./assets/CSS/books.css">
+    <script src="./assets/JS/books.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="home.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="books.html" class="active">الكتب</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h1>مرحبًا بك في مكتبة الكتب الرقمية</h1>
+            <p>استمتع باكتشاف مجموعة متنوعة من الكتب الرقمية المصممة لتلبي جميع اهتماماتك واحتياجاتك.</p>
+        </section>
+
+        <section class="books-grid">
+            <h2>تصفح كتبنا</h2>
+            <div class="books-container">
+                <!-- كتاب 1 -->
+                <div class="book-item">
+                    <h3>الذكاء الاصطناعي</h3>
+                    <p>السعر: 45000 ل.س</p>
+                    <button class="details-btn" onclick="toggleDetails(this, 'details1')">تفاصيل</button>
+                    <button class="select-btn" onclick="openForm('الذكاء الاصطناعي: مبادئ وتقنيات')">اختيار</button>
+                    <div id="details1" class="details-content">
+                        <img class="img1" src="./assets/image/كتاب-في-الذكاء-الاصطناعي.jpg" alt="">
+                        <p>يتناول الكتاب أساسيات الذكاء الاصطناعي وتقنياته الحديثة.</p>
+                    </div>
+                </div>
+                <!-- كتاب 2 -->
+                <div class="book-item">
+                    <h3>دليل JavaScript الشامل</h3>
+                    <p>السعر: 40000 ل.س</p>
+                    <button class="details-btn" onclick="toggleDetails(this, 'details2')">تفاصيل</button>
+                    <button class="select-btn" onclick="openForm('تطوير تطبيقات الويب باستخدام JavaScript')">اختيار</button>
+                    <div id="details2" class="details-content">
+                        <img class="img1" src="./assets/image/2.png" alt="">
+                        <p>هذا الكتاب يقدم تقنيات بناء مواقع وتطبيقات ويب تفاعلية باستخدام JavaScript.</p>
+                    </div>
+                </div>
+                 <!-- الكتاب 3 -->
+                <div class="book-item">
+                    <h3>مدخل إلى تصميم واجهات المستخدم UI</h3>
+                    <p>السعر: 38000 ل.س</p>
+                    <button class="details-btn" onclick="toggleDetails(this, 'details3')">تفاصيل</button>
+                    <button class="select-btn" onclick="openForm('تصميم واجهات المستخدم الحديثة')">اختيار</button>
+                    <div id="details3" class="details-content">
+                        <img class="img1" src="./assets/image/3.png" alt="">
+                        <p>دليل شامل لتصميم واجهات مستخدم تفاعلية وجذابة.</p>
+                    </div>
+                </div>
+                <!-- الكتاب 4 -->
+                <div class="book-item">
+                    <h3>مقدمة في علوم البيانات</h3>
+                    <p>السعر: 42000 ل.س</p>
+                    <button class="details-btn" onclick="toggleDetails(this, 'details4')">تفاصيل</button>
+                    <button class="select-btn" onclick="openForm('مقدمة في علوم البيانات')">اختيار</button>
+                    <div id="details4" class="details-content">
+                        <img class="img1" src="./assets/image/5.webp" alt="">
+                        <p>يغطي هذا الكتاب المفاهيم الأساسية لعلوم البيانات وكيفية تحليلها.</p>
+                    </div>
+                </div>
+                <!-- الكتاب 5 -->
+                <div class="book-item">
+                    <h3>أساسيات تعلم الآلة</h3>
+                    <p>السعر: 48000 ل.س</p>
+                    <button class="details-btn" onclick="toggleDetails(this, 'details5')">تفاصيل</button>
+                    <button class="select-btn" onclick="openForm('أساسيات تعلم الآلة')">اختيار</button>
+                    <div id="details5" class="details-content">
+                        <img class="img1" src="./assets/image/4.webp" alt="">
+                        <p>يشرح الكتاب المفاهيم الرئيسية لتعلم الآلة وتطبيقاتها.</p>
+                    </div>
+                </div>
+                <!-- الكتاب 6 -->
+                <div class="book-item">
+                    <h3>التحليل الإحصائي باستخدام Python</h3>
+                    <p>السعر: 39000 ل.س</p>
+                    <button class="details-btn" onclick="toggleDetails(this, 'details6')">تفاصيل</button>
+                    <button class="select-btn" onclick="openForm('التحليل الإحصائي باستخدام Python')">اختيار</button>
+                    <div id="details6" class="details-content">
+                        <img class="img1" src="./assets/image/6.jpeg" alt="">
+                        <p>دليل عملي لاستخدام Python في التحليل الإحصائي والبيانات.</p>
+                    </div>
+                </div>
+                <!-- الكتاب 7 -->
+                <div class="book-item">
+                    <h3>أمن المعلومات والشبكات</h3>
+                    <p>السعر: 52000 ل.س</p>
+                    <button class="details-btn" onclick="toggleDetails(this, 'details7')">تفاصيل</button>
+                    <button class="select-btn" onclick="openForm('أمن المعلومات والشبكات')">اختيار</button>
+                    <div id="details7" class="details-content">
+                        <img class="img1" src="./assets/image/7.jpg" alt="">
+                        <p>مقدمة شاملة حول تقنيات حماية المعلومات والشبكات.</p>
+                    </div>
+                </div>
+                <!-- الكتاب 8 -->
+                <div class="book-item">
+                    <h3>إدارة المشاريع البرمجية</h3>
+                    <p>السعر: 46000 ل.س</p>
+                    <button class="details-btn" onclick="toggleDetails(this, 'details8')">تفاصيل</button>
+                    <button class="select-btn" onclick="openForm('إدارة المشاريع البرمجية')">اختيار</button>
+                    <div id="details8" class="details-content">
+                        <img class="img1" src="./assets/image/8.jpg" alt="">
+                        <p>يتناول هذا الكتاب أفضل الممارسات لإدارة المشاريع البرمجية بنجاح.</p>
+                    </div>
+                </div>
+                <!-- الكتاب 9 -->
+                <div class="book-item">
+                    <h3>تصميم قواعد البيانات</h3>
+                    <p>السعر: 44000 ل.س</p>
+                    <button class="details-btn" onclick="toggleDetails(this, 'details9')">تفاصيل</button>
+                    <button class="select-btn" onclick="openForm('تصميم قواعد البيانات')">اختيار</button>
+                    <div id="details9" class="details-content">
+                        <img class="img1" src="./assets/image/9.png" alt="">
+                        <p>يوفر هذا الكتاب شرحًا عمليًا لتصميم قواعد بيانات فعالة.</p>
+                    </div>
+                </div>
+                <!-- الكتاب 10 -->
+                <div class="book-item">
+                    <h3>التفكير الإبداعي في حل المشكلات</h3>
+                    <p>السعر: 35000 ل.س</p>
+                    <button class="details-btn" onclick="toggleDetails(this, 'details10')">تفاصيل</button>
+                    <button class="select-btn" onclick="openForm('التفكير الإبداعي وحل المشكلات')">اختيار</button>
+                    <div id="details10" class="details-content">
+                        <img class="img1" src="./assets/image/10.webp" alt="">
+                        <p>يستعرض الكتاب استراتيجيات التفكير الإبداعي في حل المشكلات بطريقة مبتكرة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <div id="modal-form" class="modal">
+    <div class="modal-content">
+        <button class="close-btn" onclick="closeForm()">&times;</button>
+        <h2>إتمام الطلب</h2>
+        <form>
+            <label for="name">الاسم الكامل:</label>
+            <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" >
+
+            <label for="id">الرقم الوطني:</label>
+            <input type="text" id="id" name="id" placeholder="12345678901" required pattern="\d{11}">
+
+            <label for="dob">تاريخ الميلاد:</label>
+            <input type="date" id="dob" name="dob">
+
+            <label for="phone">رقم الموبايل:</label>
+            <input type="text" id="phone" name="phone" placeholder="09xxxxxxxx" pattern="09[3-9]\d{7}">
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com">
+
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</div>
+    </main>
+
+    <footer class="footer1">
+        <p class="a">&copy;   المكتبة الرقمية : لطلاب الجامعة الافتراضية</p>
+    </footer>
+</body>
+</html>
+</html>
