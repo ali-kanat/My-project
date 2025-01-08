@@ -83,6 +83,7 @@ header .logo {
 
 .team-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
 }
 
 .team-card h3 {
@@ -95,7 +96,7 @@ header .logo {
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 220px;
     background-color: #2980b9;
 }
